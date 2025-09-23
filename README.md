@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Portfolio Website
 
-## Getting Started
+A stunning, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features smooth animations, modern design, and optimal performance.
 
-First, run the development server:
+## ✨ Features
+
+- **Responsive Design**: Perfectly optimized for all devices and screen sizes
+- **Modern Animations**: Smooth, engaging animations powered by Framer Motion
+- **Fast Performance**: Built with Next.js 15 and optimized for speed
+- **TypeScript**: Full type safety throughout the application
+- **Tailwind CSS**: Utility-first styling with custom design system
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Interactive Components**: Engaging user interface elements
+- **Contact Form**: Functional contact form with validation
+- **Dark/Light Mode Support**: Automatic theme detection
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React & Heroicons
+- **Package Manager**: pnpm (recommended for fast development)
+- **Font**: Geist Sans & Geist Mono
+
+## 📋 Sections
+
+1. **Hero Section**: Eye-catching introduction with animated elements
+2. **About Section**: Personal information, skills, and expertise
+3. **Projects Section**: Showcase of development projects with live demos
+4. **Contact Section**: Interactive contact form and information
+5. **Footer**: Social links and additional navigation
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio-2
+   ```
+
+2. **Install dependencies** (using pnpm for optimal speed):
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🎨 Customization
+
+To customize this portfolio for your own use:
+
+1. **Update personal information** in the components:
+   - `src/components/Hero.tsx` - Name, title, description
+   - `src/components/About.tsx` - Skills, experience, bio
+   - `src/components/Projects.tsx` - Your projects and demos
+   - `src/components/Contact.tsx` - Contact information
+   - `src/components/Footer.tsx` - Social links
+
+2. **Replace project images** with your own screenshots
+
+3. **Update metadata** in `src/app/layout.tsx`
+
+4. **Customize colors** in `src/app/globals.css` and Tailwind config
+
+5. **Add your resume** to the `public` folder
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🚀 Performance Features
+
+- **Image Optimization**: Automatic image optimization with Next.js
+- **Code Splitting**: Automatic code splitting for optimal loading
+- **SEO Optimization**: Meta tags, OpenGraph, and Twitter cards
+- **Lazy Loading**: Framer Motion's `useInView` for performance
+- **Fast Refresh**: Instant feedback during development
+
+## 📦 Available Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Development
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm start        # Start production server
+pnpm lint         # Run ESLint
+
+# Using npm/yarn alternatives
+npm run dev       # Start development server
+yarn dev          # Start development server
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Deploy on Vercel (Recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with zero configuration
 
-## Learn More
+### Other Platforms
 
-To learn more about Next.js, take a look at the following resources:
+- **Netlify**: Build command `pnpm build`, publish directory `out`
+- **GitHub Pages**: Use `next export` for static export
+- **Docker**: Use the provided Dockerfile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Browser Support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Chrome (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- Edge (last 2 versions)
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open source and available under the [MIT License](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](../../issues).
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+**Built with ❤️ using Next.js and Tailwind CSS**
