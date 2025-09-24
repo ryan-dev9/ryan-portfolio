@@ -137,7 +137,9 @@ function Footer() {
               >
                 <Heart size={14} fill="currentColor" />
               </motion.span>{' '}
-              using Next.js & Tailwind CSS
+              using
+               <img src="/next.svg" alt="" className='w-1/6 px-1 block text-white ' />
+              & Tailwind CSS
             </p>
             <p className="text-foreground/50 text-lg">
               © {new Date().getFullYear()} Ryan Developer. All rights reserved.

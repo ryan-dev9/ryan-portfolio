@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion }  from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
@@ -9,6 +9,7 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
@@ -17,7 +18,14 @@ const Header = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Get header height (fallback to 72px if not found)
+      const header = document.querySelector('header') || document.querySelector('nav');
+      const headerHeight = header ? header.clientHeight : 72;
+      const elementTop = element.getBoundingClientRect().top + window.scrollY + 68;
+      window.scrollTo({
+        top: elementTop - headerHeight - 8, // 8px extra space
+        behavior: 'smooth',
+      });
       setIsOpen(false);
     }
   };
