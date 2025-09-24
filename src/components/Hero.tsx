@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    const element = document.querySelector('#about');
+  const scrollToProjects = () => {
+    const element = document.querySelector('#projects');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -111,7 +111,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row justify-center gap-4 mt-8"
             >
               <button
-                onClick={scrollToAbout}
+                onClick={scrollToProjects}
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Discover My Work
