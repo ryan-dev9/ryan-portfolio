@@ -40,6 +40,7 @@ const Services = () => {
       });
       setIsOpen(false);
     }
+    console.log(isOpen)
   };
 
     return (

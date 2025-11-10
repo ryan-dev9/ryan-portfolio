@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { Orbitron } from "next/font/google"
 
 const Hero = () => {
   const scrollToProjects = () => {

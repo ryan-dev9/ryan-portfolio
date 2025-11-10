@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion }  from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { Orbitron } from "next/font/google"
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
