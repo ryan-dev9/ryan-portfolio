@@ -31,7 +31,7 @@ const Contact = () => {
       await new Promise(resolve => setTimeout(resolve, 2000));
       setFormStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setFormStatus('error');
     }
 

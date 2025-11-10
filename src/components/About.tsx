@@ -64,7 +64,7 @@ const About = () => {
               
               <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
                 <p>
-                  With over 4 months of experience in web development, I specialize in creating 
+                  With over 7 months of experience in web development, I specialize in creating 
                   modern, scalable, and user-friendly applications. My journey began with a 
                   curiosity for how things work on the web, and it has evolved into a passion 
                   for crafting exceptional digital experiences.
@@ -91,7 +91,7 @@ const About = () => {
                   <div className="text-foreground/60 text-sm">Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600">4+</div>
+                  <div className="text-3xl font-bold text-purple-600">7+</div>
                   <div className="text-foreground/60 text-sm">Months Exp.</div>
                 </div>
                 <div className="text-center">

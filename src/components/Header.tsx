@@ -3,14 +3,14 @@
 import { useState } from 'react';
 import { motion }  from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-
+import { Orbitron } from "next/font/google"
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -46,7 +46,7 @@ const Header = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold text-foreground"
           >
-            Portfolio
+            Rudra 
           </motion.div>
 
           {/* Desktop Navigation */}

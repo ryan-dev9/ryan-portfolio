@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Github, Linkedin, Mail, Twitter, Heart, Instagram } from 'lucide-react';
 
 function Footer() {
@@ -52,7 +53,7 @@ function Footer() {
               onClick={scrollToTop}
               className="text-2xl font-bold text-foreground hover:text-blue-600 transition-colors duration-300"
             >
-              Ryan Developer
+              Rudra Parashar
             </button>
             <p className="text-foreground/60 mt-2">Full Stack Developer</p>
           </motion.div>
@@ -126,8 +127,7 @@ function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
-            className="text-center space-y-2"
-          >
+            className="text-center space-y-2" >
             <p className="text-foreground/60 text-sm flex items-center justify-center gap-1">
               Made with{' '}
               <motion.span
@@ -138,11 +138,11 @@ function Footer() {
                 <Heart size={14} fill="currentColor" />
               </motion.span>{' '}
               using
-               <img src="/next.svg" alt="" className='w-1/6 px-1 block text-white ' />
+              <Image src="/next.svg" alt="Next.js" width={24} height={24} className="w-6 px-1 block text-white" />
               & Tailwind CSS
             </p>
             <p className="text-foreground/50 text-lg">
-              © {new Date().getFullYear()} Ryan Developer. All rights reserved.
+              © {new Date().getFullYear()} Rudra Parashar. All rights reserved.
             </p>
           </motion.div>
 

@@ -1,7 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { Orbitron } from "next/font/google"
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -46,8 +47,8 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight"
             >
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Ryan Developer
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text font-[Orbitron] text-transparent">
+                Rudra Parashar
               </span>
             </motion.h1>
 

@@ -1,35 +1,36 @@
 import type { Metadata, Viewport } from "next";
+import { Orbitron } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { Geist, Geist_Mono } from "next/font/google";
-import './globals.css';
+import { Geist } from "next/font/google";
+import './global.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Ryan Developer - Portfolio",
+  title: "Rudra Parashar - Portfolio",
   description: "Modern, responsive portfolio website showcasing web development projects and skills. Built with Next.js, TypeScript, and Tailwind CSS.",
   keywords: "portfolio, web developer, full stack developer, Next.js, React, TypeScript, Tailwind CSS",
-  authors: [{ name: "Ryan Developer" }],
-  creator: "Ryan Developer",
+  authors: [{ name: "Rudra Parashar" }],
+  creator: "Rudra Parashar",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://ryan.vercel.app",
-    title: "Ryan  - Full Stack Developer Portfolio",
+    title: "Rudra  - Full Stack Developer Portfolio",
     description: "Modern, responsive portfolio website showcasing web development projects and skills.",
-    siteName: "Ryan Developer - Portfolio",
+    siteName: "Rudra Parashar - Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ryan - Full Stack Developer Portfolio",
+    title: "Rudra - Full Stack Developer Portfolio",
     description: "Modern, responsive portfolio website showcasing web development projects and skills.",
     creator: "@ryan-dev9",
   },
@@ -49,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${orbitron.variable} antialiased`}
       >
         {children}
         <Analytics />

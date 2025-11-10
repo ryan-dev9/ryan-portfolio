@@ -27,7 +27,7 @@ const Projects = () => {
       description: 'A collaborative blog platform with real-time updates, drag-and-drop functionality, and team workspaces.',
       image: '/rd-blog.png',
       technologies: ['Next.js', 'Node.js', 'Tailwind', 'Motion'],
-      github: 'https://github.com/ryan-dev9/rdblog',
+      github: 'https://github.com/ryan-dev9/RD-Blog',
       live: 'https://rdblog.vercel.app',
       stats: { stars: 89, views: '1.5k' },
       featured: true,
@@ -38,48 +38,15 @@ const Projects = () => {
       description: 'A password management full stack web app made with Next-js, Tailwind, Framer-motion, lucide-react, MongoDB.',
       image: '/lockify.png',
       technologies: ['Next-js', 'Tailwind CSS', 'Framer-motion', 'Node.js','Express', 'MongoDB'],
-      github: 'https://github.com/yourname/weather-dashboard',
-      live: 'https://weather-dashboard-demo.vercel.app',
+      github: 'https://github.com/ryan-dev9/lockify',
+      live: 'https://lockify-nine.vercel.app',
       stats: { stars: 0, views: '0' },
-      featured: false,
+      featured: true,
     },
-    // {
-    //   id: 4,
-    //   title: 'Portfolio Website',
-    //   description: 'A responsive portfolio website with modern animations, dark mode support, and optimized performance.',
-    //   image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop',
-    //   technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript'],
-    //   github: 'https://github.com/yourname/portfolio',
-    //   live: 'https://portfolio-demo.vercel.app',
-    //   stats: { stars: 234, views: '3.2k' },
-    //   featured: false,
-    // },
-    // {
-    //   id: 5,
-    //   title: 'Social Media Analytics',
-    //   description: 'An analytics dashboard for social media metrics with data visualization and automated reporting features.',
-    //   image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
-    //   technologies: ['React', 'Chart.js', 'Express', 'PostgreSQL', 'Redis'],
-    //   github: 'https://github.com/yourname/social-analytics',
-    //   live: 'https://analytics-demo.vercel.app',
-    //   stats: { stars: 156, views: '1.8k' },
-    //   featured: false,
-    // },
-    // {
-    //   id: 6,
-    //   title: 'Recipe Sharing Platform',
-    //   description: 'A community-driven recipe sharing platform with user profiles, recipe collections, and rating system.',
-    //   image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop',
-    //   technologies: ['Next.js', 'Firebase', 'Tailwind CSS', 'React Query'],
-    //   github: 'https://github.com/yourname/recipe-platform',
-    //   live: 'https://recipes-demo.vercel.app',
-    //   stats: { stars: 98, views: '1.2k' },
-    //   featured: false,
-    // },
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
+  // const otherProjects = projects.filter(project => !project.featured);
 
   const ProjectCard = ({ project, index, isFeatured = false }: { project: typeof projects[0], index: number, isFeatured?: boolean }) => (
     <motion.div
@@ -98,7 +65,7 @@ const Projects = () => {
           width={800}
           height={400}
           className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${
-            isFeatured ? 'h-64 md:h-80' : 'h-48'
+            isFeatured ? 'h-64 md:h-120' : 'h-48'
           }`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -229,7 +196,7 @@ const Projects = () => {
           </div>
 
           {/* Other Projects */}
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <motion.h3
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -244,7 +211,7 @@ const Projects = () => {
             {otherProjects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index + featuredProjects.length} />
             ))}
-          </div>
+          </div> */}
 
           {/* View More */}
           <motion.div
