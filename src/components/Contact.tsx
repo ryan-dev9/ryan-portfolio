@@ -43,7 +43,7 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email',
-      value: 'your@email.com',
+      value: 'ryandeveloper97@gmail.com',
       link: 'mailto:ryandeveloper97@mail.com',
     },
     {
@@ -83,7 +83,7 @@ const Contact = () => {
               initial={{ width: 0 }}
               animate={isInView ? { width: '4rem' } : { width: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded mb-6"
+              className="h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded mb-6"
             ></motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -127,7 +127,7 @@ const Contact = () => {
                     transition={{ delay: 1.0 + index * 0.1, duration: 0.6 }}
                     className="flex items-center space-x-4 p-4 rounded-lg bg-background hover:bg-foreground/5 transition-colors duration-300 group"
                   >
-                    <div className="flex-shrink-0 p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white group-hover:shadow-lg transition-shadow duration-300">
+                    <div className="shrink-0 p-3 bg-linear-to-r from-blue-600 to-purple-600 rounded-full text-white group-hover:shadow-lg transition-shadow duration-300">
                       {info.icon}
                     </div>
                     <div>
@@ -243,7 +243,7 @@ const Contact = () => {
                       ? 'bg-green-500 hover:bg-green-600'
                       : formStatus === 'error'
                       ? 'bg-red-500 hover:bg-red-600'
-                      : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:shadow-lg transform hover:scale-105'
+                      : 'bg-linear-to-r from-blue-600 to-purple-600 hover:shadow-lg transform hover:scale-105'
                   }`}
                 >
                   {formStatus === 'loading' ? (

@@ -66,7 +66,7 @@ const Services = () => {
                             initial={{ width: 0 }}
                             animate={{ width: "4rem" }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"
+                            className="h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded"
                         ></motion.div>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}

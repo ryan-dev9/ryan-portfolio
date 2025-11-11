@@ -46,7 +46,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight"
             >
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text font-[Orbitron] text-transparent">
+              <span className="bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text font-[Orbitron] text-transparent">
                 Rudra Parashar
               </span>
             </motion.h1>
@@ -112,7 +112,7 @@ const Hero = () => {
             >
               <button
                 onClick={scrollToProjects}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Discover My Work
               </button>

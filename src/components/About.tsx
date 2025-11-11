@@ -46,7 +46,7 @@ const About = () => {
               initial={{ width: 0 }}
               animate={isInView ? { width: '4rem' } : { width: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"
+              className="h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded"
             ></motion.div>
           </div>
 
@@ -132,7 +132,7 @@ const About = () => {
                         initial={{ width: 0 }}
                         animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
                         transition={{ delay: 1.2 + index * 0.1, duration: 1.0, ease: 'easeOut' }}
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full"
+                        className="bg-linear-to-r from-blue-600 to-purple-600 h-2 rounded-full"
                       ></motion.div>
                     </div>
                   </motion.div>

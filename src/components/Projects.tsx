@@ -68,7 +68,7 @@ const Projects = () => {
             isFeatured ? 'h-64 md:h-120' : 'h-48'
           }`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         {/* Overlay Links */}
         <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -142,7 +142,7 @@ const Projects = () => {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 px-4 py-2 text-sm bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all duration-300"
+            className="flex items-center space-x-2 px-4 py-2 text-sm bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all duration-300"
           >
             <ExternalLink size={16} />
             <span>Live Demo</span>
@@ -175,7 +175,7 @@ const Projects = () => {
               initial={{ width: 0 }}
               animate={isInView ? { width: '4rem' } : { width: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded mb-6"
+              className="h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto rounded mb-6"
             ></motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -224,7 +224,7 @@ const Projects = () => {
               href="https://github.com/ryan-dev9"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               <Github size={20} />
               <span>View More on GitHub</span>
